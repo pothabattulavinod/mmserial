@@ -105,7 +105,12 @@
                     }]
                 },
                 image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCFoJiuXby606i6oY1MNEiYlG9Iy_Y3On30w&usqp=CAU',
-                title: "07 OCT 2024",  // Updated Title
+                title: "07 OCT 2024",
+            });
+
+            // Force full screen on play
+            playerInstance.on('play', function() {
+                playerInstance.setFullscreen(true);
             });
 
             // Add a custom button to forward the video 10 seconds
